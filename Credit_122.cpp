@@ -94,4 +94,5 @@ do {
     
     cout << "\nApakah Anda ingin mengulang?(y/t): "; cin >> ulang; // fitur tambahan untuk mengulang program tanpa harus run ulang secara manual
 } while (ulang == 'y' || ulang == 'Y');
+return 0;
 }
