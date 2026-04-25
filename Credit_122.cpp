@@ -77,7 +77,7 @@ do {
         } else if (lamatenor <= 0) {
             cout << "Input tidak valid! Tenor harus diatas 0\n";
         }
-    } while(lamatenor % 3 != 0);
+    } while(lamatenor % 3 != 0 || lamatenor > 12 || lamatenor <= 0);
 
     pokokpinjaman = (harga - uangdp) + admin;
     totalbunga = pokokpinjaman * (bunga / 100) * lamatenor;
