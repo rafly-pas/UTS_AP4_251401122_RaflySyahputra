@@ -72,6 +72,10 @@ do {
         cout << "\nMasukkan Tenor (bulan, kelipatan 3): "; cin >> lamatenor;
         if (lamatenor % 3 != 0) {
             cout << "Input tidak valid! Tenor harus kelipatan 3\n";
+        } else if (lamatenor > 12) {
+            cout << "Input tidak valid! Maksimal tenor 12 Bulan\n";
+        } else if (lamatenor <= 0) {
+            cout << "Input tidak valid! Tenor harus diatas 0\n";
         }
     } while(lamatenor % 3 != 0);
 
